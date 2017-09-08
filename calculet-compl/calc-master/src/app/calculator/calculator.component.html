@@ -1,0 +1,49 @@
+<div class="result">Result:{{ result }}</div>
+
+<div class="buttons">
+  <div class="row"> 
+    <button (click)="addToCalculation('7')">7</button>
+    <button (click)="addToCalculation('8')">8</button>
+    <button (click)="addToCalculation('9')">9</button>
+    <button (click)="calculate('/')">/</button>
+  </div>
+  <div class="row"> 
+    <button (click)="addToCalculation('4')">4</button>
+    <button (click)="addToCalculation('5')">5</button>
+    <button (click)="addToCalculation('6')">6</button>
+    <button (click)="calculate('*')">X</button>
+  </div>
+  <div class="row"> 
+    <button (click)="addToCalculation('1')">1</button>
+    <button (click)="addToCalculation('2')">2</button>
+    <button (click)="addToCalculation('3')">3</button>
+    <button (click)="calculate('-')">-</button>
+  </div>
+  <div class="row"> 
+    <button (click)="addToCalculation('0')">0</button>
+    <button (click)="addToCalculation('.')">.</button>
+     <button (click)="calculate('+')">+</button>
+    <button (click)="getTotal()">=</button>
+  </div>
+  <div class="row"> 
+  <button (click)="reset(); playAudio();">C</button>
+  <button (click)="resetCE(); playAudio();">CE</button>
+  <button (click)="backspace(); playAudio();">DEL</button>
+  <button (click)="calculate('%'); playAudio();">%</button>
+
+</div>
+<div class="row">
+    <button (click)="addToCalculation('3.14'); playAudio();">PI</button>
+    <button (click)="addToCalculation('2.72'); playAudio();">e</button>
+    <button (click)="calculate('^'); playAudio();">^</button>
+    <button></button>
+    
+  </div>
+  <div class="row">
+    <button (click)="calculate('tan'); playAudio();">tan</button>
+    <button (click)="calculate('sin'); playAudio();">sin</button>
+    <button (click)="calculate('sqrt'); playAudio();">sqrt</button>
+    <button (click)="calculate('cos'); playAudio();">cos</button>
+    
+  </div>
+</div>
